@@ -1,4 +1,4 @@
-.benefits {
+.od-benefits {
   display: flex;
 
   @include breakpoint-xs {
@@ -23,6 +23,7 @@
 
     > p {
       font-size: $font-size-description--sm;
+      color: $text-color;
       margin: 20px 0;
       letter-spacing: .4px;
     }
