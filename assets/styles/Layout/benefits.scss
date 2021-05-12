@@ -1,0 +1,50 @@
+.benefits {
+  display: flex;
+
+  @include breakpoint-xs {
+    flex-direction: column;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__description {
+    width: 50%;
+
+    @include breakpoint-xs {
+      width: 100%;
+    }
+
+    > h2 {
+      color: $title-color;
+      font-size: $font-size-title;
+      font-weight: 700;
+    }
+
+    > p {
+      font-size: $font-size-description--sm;
+      margin: 20px 0;
+      letter-spacing: .4px;
+    }
+
+    > h4 {
+      font-size: $font-size-description--md;
+      color: $title-color;
+      font-weight: 500;
+    }
+  }
+
+  &__image {
+    width: 50%;
+    text-align: center;
+
+    @include breakpoint-xs {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    @include breakpoint-xs {
+      order: -1;
+    }
+  }
+}
