@@ -1,0 +1,76 @@
+.od-health {
+  display: flex;
+
+  @include breakpoint-xs {
+    flex-direction: column;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__description {
+    width: 70%;
+
+    @include breakpoint-xs {
+      width: 100%;
+    }
+
+    > h2 {
+      color: $title-color;
+      font-size: $font-size-title;
+      font-weight: 700;
+    }
+
+    > p {
+      font-size: $font-size-description--sm;
+      color: $text-color;
+      margin: 20px 0;
+      letter-spacing: .4px;
+    }
+
+    &__box {
+      position: relative;
+      padding: 10px 50px;
+      background-color: #fff;
+      width: 87%;
+      height: 200px;
+      box-shadow: 1px 15px 12px 6px rgba(164,164,164,0.62);
+
+      @include breakpoint-xs {
+        padding: 0;
+        width: 100%;
+      }
+
+      &::before {
+        content: 'close svg ??????? modal ???? :)';
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        @include breakpoint-xs {
+          display: none;
+        }
+      }
+
+      &--title {
+        margin-bottom: 20px;
+      }
+
+      &--description {
+        font-size: $font-size-description--sm;
+        letter-spacing: .4px;
+        color: $text-color;
+      }
+    }
+  }
+
+  &__image {
+    width: 30%;
+
+    @include breakpoint-xs {
+      width: 100%;
+      margin: 20px 0;
+      text-align: center;
+    }
+  }
+}
