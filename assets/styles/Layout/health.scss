@@ -1,5 +1,6 @@
 .od-health {
   display: flex;
+  padding: 60px 0; //REMOVE LATER
 
   @include breakpoint-xs {
     flex-direction: column;
